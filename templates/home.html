@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='/styles/home.css') }}"
+    />
+  </head>
+  <body>
+    <div class="form animated flipInX">
+      <h2>CHECK IF YOU ARE DIABETIC</h2>
+      <form method="POST" ,action="/predict">
+        <label for="a">Age</label>
+        <input class="a" type="number" name="a" placeholder="Age" required />
+        <label for="b">Gender</label>
+        <select name="b" required>
+          <option value="1">Male</option>
+          <option value="0">Female</option>
+        </select>
+
+        <label for="c">Polyria</label>
+        <select class="c" name="c" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="d">Polydipsia</label>
+        <select class="d" name="d" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="e">Sudden weight loss</label>
+        <select class="e" name="e" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="f">Weakness</label>
+        <select class="f" name="f" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="g">Polyphagia</label>
+        <select class="g" name="g" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="h">Genital thrush</label>
+        <select class="h" name="h" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="i">Visual blurring</label>
+        <select class="i" name="i" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="j">Itching</label>
+        <select class="j" name="j" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="k">Irritability</label>
+        <select class="k" name="k" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="l">Delayed healing</label>
+        <select class="l" name="l" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="m">Partial paresis</label>
+        <select class="m" name="m" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="n">Muscle stiffness</label>
+        <select class="n" name="n" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="o">Alopecia</label>
+        <select class="o" name="o" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+
+        <label for="p">Obesity</label>
+        <select class="p" name="p" required>
+          <option value="1">Yes</option>
+          <option value="0" selected>No</option>
+        </select>
+        <button>Check</button>
+      </form>
+    </div>
+  </body>
+</html>
